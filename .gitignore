@@ -1,0 +1,11 @@
+__pycache__/
+venv/
+
+logs/
+*.log
+
+data/processed/
+*.csv
+*.xlsx
+
+.pytest_cache/
