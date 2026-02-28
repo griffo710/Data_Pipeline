@@ -1,0 +1,73 @@
+# Required columns.
+required_columns:
+- student_id
+- age
+- gender
+- academic_level
+- study_hours
+- self_study_hours
+- online_classes_hours
+- social_media_hours
+- gaming_hours
+- sleep_hours
+- screen_time_hours
+- exercise_minutes
+- caffeine_intake_mg
+- part_time_job
+- upcoming_deadline
+- internet_quality
+- mental_health_score
+- focus_index
+- burnout_level
+- productivity_score
+- exam_score
+
+# Data types for columns.
+column_data_types:
+  student_id: numeric
+  age: numeric
+  gender: categorical
+  academic_level: categorical
+  study_hours: numeric
+  self_study_hours: numeric
+  online_classes_hours: numeric
+  social_media_hours: numeric
+  gaming_hours: numeric
+  sleep_hours: numeric
+  screen_time_hours: numeric
+  exercise_minutes: numeric
+  caffeine_intake_mg: numeric
+  part_time_job: categorical
+  upcoming_deadline: categorical
+  internet_quality: categorical
+  mental_health_score: numeric
+  focus_index: numeric
+  burnout_level: numeric
+  productivity_score: numeric
+  exam_score: numeric
+ 
+# Missing threshold.
+missing_threshold: 0.3
+
+# Strictly for numeric columns.
+ranges:
+  student_id: [1, 5001]
+  age: [16, 25]
+  study_hours: [0, 12]
+  self_study_hours: [0, 8]
+  online_classes_hours: [0, 6]
+  social_media_hours: [0, 9]
+  gaming_hours: [0, 6]
+  sleep_hours: [4, 10]
+  screen_time_hours: [0, 16]
+  exercise_minutes: [0, 149]
+  caffeine_intake_mg: [0, 499]
+  focus_index: [1, 64]
+  burnout_level: [1, 98]
+  productivity_score: [1, 99]
+  exam_score: [1, 65]
+
+# Imputation methods.
+numerical_imputation: mean
+categorical_imputation: mode
+date_imputation: mode
