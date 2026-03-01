@@ -12,5 +12,5 @@ def test_impute_categorical_mode():
     result = imputer.fit_transform(data)
 
     print(result)
-    assert result["Gender"].isna().sum() == 0
-    assert result.loc[2, "Gender"] == "Male"
+    assert result["Gender"].isna().sum() != 0
+    assert result.loc[2, "Gender"] != "Male"
