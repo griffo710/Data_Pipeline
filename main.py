@@ -22,7 +22,7 @@ def main():
         logger.info(f"[{run_id}] Configuration loaded succesfully.")
 
         df = ingest_data(
-            r"C:\Users\USER-1\OneDrive\Documents\R-files\ultimate_student_productivity_dataset_5000.csv"
+            r"C:\Users\USER-1\Downloads\Crop_Recommender\Crop_recommendation.csv"
         )
         logger.info(f"[{run_id}] Data ingestion complete. Shape: {df.shape}")
 
